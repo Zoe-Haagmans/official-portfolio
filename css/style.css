@@ -6,6 +6,10 @@ body {
     width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -603,12 +607,12 @@ li {
     align-items: center;
 }
 
-.containerdd-left {
-    display: flex;
-    flex-direction: column;
-    gap: 47px;
-    width: 35%;
-}
+    .containerdd-left {
+        display: flex;
+        flex-direction: column;
+        gap: 47px;
+        width: 45%;
+    }
 
 .containerdd-rechts {
     display: flex;
@@ -619,7 +623,15 @@ li {
 
 .dd-left {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    display: block;
+}
+
+.dd-right1, .dd-right2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .dd-right1 {
@@ -873,7 +885,7 @@ a:has(.vpbutton) {
         display: flex;
         flex-direction: column;
         gap: 25px;
-        width: 35%;
+        width: 45%;
     }
 
     .dd-right1 {
@@ -1566,7 +1578,7 @@ a:has(.vpbutton) {
         padding: 50px 0;
         margin-top: 100px;
     }
-    
+
 
     /*footer*/
     .pfooter {
@@ -1773,7 +1785,7 @@ a:has(.vpbutton) {
         width: 80%;
         margin: auto;
         margin-top: 100px;
-        
+
     }
 
     .containersk-up {
@@ -1958,7 +1970,7 @@ a:has(.vpbutton) {
     /*digidive*/
     .ddflex {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
         margin: auto;
         align-items: center;
@@ -1966,18 +1978,15 @@ a:has(.vpbutton) {
 
     .containerdd-rechts {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
-        width: 50%;
+        width: 100%;
     }
 
-    .dd-right1 {
-        width: 80px;
-        height: auto;
-    }
-
+    .dd-right1,
     .dd-right2 {
-        width: 72px;
+        width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -1985,7 +1994,13 @@ a:has(.vpbutton) {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        width: 35%;
+        width: 100%;
+    }
+
+    .dd-left {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }
 
