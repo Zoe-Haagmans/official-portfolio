@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/pst0hra.css">
+    <link rel="stylesheet" href="https://use.typekit.net/thp8tux.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="start">
+        <div class="navbar-icon">
+            <img src="assets/icons/Logo.svg" alt="logo" class="logo">
+            <a href="index.html">
+                <button class="home"><img src="assets/icons/home.svg" alt="Home" class="homelogo"></button>
+            </a>
+        </div>
+        <div class="navbar-head">
+            <h1>Digidive</h1>
+        </div>
+        <div class="navbar-links">
+            <a class="nav" href="index.html#work">Projecten</a>
+            <a class="nav" href="index.html#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="nav mobile-nav" href="#work" onclick="closeMobileMenu()">Projecten</a>
+        <a class="nav mobile-nav" href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <div class="proces">
+        <div class="container-proces">
+            <div class="fade-in">
+                <h2>Proces</h2>
+                <div class="lijn"></div>
+            </div>
+            <p class="procestekst fade-in">Bij deze opdracht werkte ik in een groep aan het ontwikkelen en uitvoeren van
+                een codeerworkshop voor brugklassers, met als doel hen kennis te laten maken met programmeren. Daarnaast
+                ontwierpen we een werkboek, webpagina en video om docenten te stimuleren de workshop te gebruiken. We
+                onderzochten de doelgroep via bronnen en interviews en gebruikten een scrumboard voor planning en
+                taakverdeling. Tijdens het proces maakten we een storyboard en ontwikkelden we de naam Digidive met
+                bijpassende branding. Op basis van het brandboard ontwierpen we de website, het werkboekje en de video.
+                Ik ontwierp de website in een zee-thema, maakte illustraties en experimenteerde met kleur en compositie
+                in Figma. We voerden de workshop uit op het Bernard Lievegoed College, waar leerlingen enthousiast
+                deelnamen, waarna ik de responsive website afrondde.</p>
+        </div>
+        <img src="assets/pictures/digidive/digidive logo.svg" alt="" class="logofoto fade-in">
+    </div>
+
+    <div class="langelijn fade-in"></div>
+
+    <div class="container-eindwerk">
+        <div class="ddflex">
+            <div class="containerdd-left">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/digidive/werkboek.svg" alt="" class="dd-left">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/digidive/opdracht werkboek.svg" alt="" class="dd-left">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/digidive/certificaat.svg" alt="" class="dd-left">
+                </div>
+            </div>
+
+            <div class="containerdd-rechts">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/digidive/main page.svg" alt="" class="dd-right1">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/digidive/workshop page.svg" alt="" class="dd-right2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="bugsy.html">
+        <button class="vpbutton fade-in">Volgend project</button>
+    </a>
+
+    <div class="footer">
+        <div class="footercontainer">
+            <div class="links">
+                <img src="assets/icons/Logo.svg" alt="">
+            </div>
+            <div class="rechts">
+                <p>Zoë Haagmans</p>
+                <p>CMD Zuyd Hogeschool Maastricht</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/slider.js"></script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('active');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/pst0hra.css">
+    <link rel="stylesheet" href="https://use.typekit.net/thp8tux.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="start">
+        <div class="navbar-icon">
+            <img src="assets/icons/Logo.svg" alt="logo" class="logo">
+            <a href="index.html">
+                <button class="home"><img src="assets/icons/home.svg" alt="Home" class="homelogo"></button>
+            </a>
+        </div>
+        <div class="navbar-head">
+            <h1>Design papers</h1>
+        </div>
+        <div class="navbar-links">
+            <a class="nav" href="index.html#work">Projecten</a>
+            <a class="nav" href="index.html#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="nav mobile-nav" href="#work" onclick="closeMobileMenu()">Projecten</a>
+        <a class="nav mobile-nav" href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <div class="proces">
+        <div class="container-proces">
+            <div class="fade-in">
+                <h2>Proces</h2>
+                <div class="lijn"></div>
+            </div>
+            <p class="procestekst fade-in">Voor dit project schreef ik een artikel over een designgerelateerd onderwerp
+                en ontwierp en codeerde ik een bijpassende website. Mijn hoofdvraag was: “Wat zijn de factoren van een
+                goede albumcover?” Het proces begon met deskresearch, waarbij ik academische en online bronnen
+                analyseerde en de belangrijkste inzichten selecteerde. In de writing skills-lessen leerde ik teksten
+                structureren, bronnen correct gebruiken en interviews afnemen; deze vaardigheden paste ik toe in een
+                interview met een professional, wat mijn artikel meer diepgang gaf. Tegelijkertijd ontwikkelde ik in
+                visual design gevoel voor compositie, kleur en vormgeving, wat ik vertaalde naar een passend ontwerp. In
+                de MMT-lessen leerde ik de basis van webdesign en coderen, waarmee ik mijn ontwerp uitwerkte tot een
+                functionerende website met een homepage en artikelpagina. </p>
+        </div>
+        <img src="assets/pictures/Design papers/dp logo.svg" alt="" class="logofoto fade-in">
+    </div>
+
+    <div class="langelijn fade-in"></div>
+
+    <div class="container-eindwerk">
+        <div class="flexdp desktop-only">
+            <div class="containerdp-left">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/main page.svg" loading="eager" class="fade-in">
+                </div>
+            </div>
+            <div class="containerdp-middle">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/artikel.svg" alt="">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/interview.svg" alt="">
+                </div>
+            </div>
+            <div class="containerdp-right">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/article page.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- responsive -->
+        <div class="flexdp mobile-only">
+            <div class="containerdp-left">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/main page.svg" loading="eager" class="dpweb">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/article page.svg" alt="" class="dpweb">
+                </div>
+            </div>
+            <div class="containerdp-middle">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/artikel.svg" alt="" class="dpimg">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/Design papers/interview.svg" alt="" class="dpimg2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="onderhetstof.html">
+        <button class="vpbutton fade-in">Volgend project</button>
+    </a>
+
+    <div class="footer">
+        <div class="footercontainer">
+            <div class="links">
+                <img src="assets/icons/Logo.svg" alt="">
+            </div>
+            <div class="rechts">
+                <p>Zoë Haagmans</p>
+                <p>CMD Zuyd Hogeschool Maastricht</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/slider.js"></script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('active');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+        }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/pst0hra.css">
+    <link rel="stylesheet" href="https://use.typekit.net/thp8tux.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="start">
+        <div class="navbar-icon">
+            <img src="assets/icons/Logo.svg" alt="logo" class="logo">
+            <a href="index.html">
+                <button class="home"><img src="assets/icons/home.svg" alt="Home" class="homelogo"></button>
+            </a>
+        </div>
+        <div class="navbar-head">
+            <h1>Onder het stof</h1>
+        </div>
+        <div class="navbar-links">
+            <a class="nav" href="index.html#work">Projecten</a>
+            <a class="nav" href="index.html#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="nav mobile-nav" href="#work" onclick="closeMobileMenu()">Projecten</a>
+        <a class="nav mobile-nav" href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <div class="proces">
+        <div class="container-proces">
+            <div class="fade-in">
+                <h2>Proces</h2>
+                <div class="lijn"></div>
+            </div>
+            <p class="procestekst fade-in">Bij deze opdracht maakten we samen met CBS een multimedia story over de
+                steenkoolwinning in Limburg, met als focus de gevolgen van de mijnsluiting voor Heerlen. We onderzochten
+                bronnen met cijfers en data, ordenden de informatie en brachten de belangrijkste onderwerpen samen in
+                een mindmap. Daarna werkten we de opzet uit tot een scrollytelling, waarin de impact van de mijnsluiting
+                chronologisch zichtbaar werd. We schreven de teksten, zochten passende foto’s en ontwikkelden een eigen
+                stijl op basis van inspiratie en emoties die we aan kleuren koppelden. Ik was verantwoordelijk voor het
+                ontwerp van de story en hielp ook mee met het coderen van pop-ups en extra informatie. Het eindresultaat
+                was een sterk multimedia verhaal met video, beeld en ontwerp die goed samenkwamen. Scrollytelling werkt
+                hier goed, omdat het een verhaal stap voor stap en in een vaste volgorde duidelijk maakt.</p>
+        </div>
+        <img src="assets/pictures/onder het stof/ohs logo.svg" alt="" class="logofoto fade-in">
+    </div>
+
+    <div class="langelijn fade-in"></div>
+
+    <div class="container-eindwerk">
+        <div class="containerohs">
+            <img src="assets/pictures/onder het stof/scherm 1.svg" alt="" class="ohsimg fade-in">
+            <img src="assets/pictures/onder het stof/scherm 2.svg" alt="" class="ohsimg fade-in">
+            <img src="assets/pictures/onder het stof/scherm 3.svg" alt="" class="ohsimg fade-in">
+            <img src="assets/pictures/onder het stof/scherm 4.svg" alt="" class="ohsimg fade-in">
+            <img src="assets/pictures/onder het stof/scherm 5.svg" alt="" class="ohsimg fade-in">
+            <img src="assets/pictures/onder het stof/scherm 6.svg" alt="" class="ohsimg fade-in">
+        </div>
+    </div>
+
+    <a href="https://mia-mms-2526.github.io/team10/">
+        <button class="vpbutton fade-in">Bekijk story</button>
+    </a>
+
+    <a href="kliekjeskoning.html">
+        <button class="vpbutton fade-in">Volgend project</button>
+    </a>
+
+    <div class="footer">
+        <div class="footercontainer">
+            <div class="links">
+                <img src="assets/icons/Logo.svg" alt="">
+            </div>
+            <div class="rechts">
+                <p>Zoë Haagmans</p>
+                <p>CMD Zuyd Hogeschool Maastricht</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/slider.js"></script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('active');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+        }
+    </script>
+
+
+
+</body>
+
+</html>

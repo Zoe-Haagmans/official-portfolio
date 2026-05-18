@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/pst0hra.css">
+    <link rel="stylesheet" href="https://use.typekit.net/thp8tux.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="start">
+        <div class="navbar-icon">
+            <img src="assets/icons/Logo.svg" alt="logo" class="logo">
+            <a href="index.html">
+                <button class="home"><img src="assets/icons/home.svg" alt="Home" class="homelogo"></button>
+            </a>
+        </div>
+        <div class="navbar-head">
+            <h1>Kliekjeskoning</h1>
+        </div>
+        <div class="navbar-links">
+            <a class="nav" href="index.html#work">Projecten</a>
+            <a class="nav" href="index.html#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="nav mobile-nav" href="#work" onclick="closeMobileMenu()">Projecten</a>
+        <a class="nav mobile-nav" href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    
+
+    <div class="proces">
+        <div class="container-proces">
+            <div class="fade-in">
+                <h2>Proces</h2>
+                <div class="lijn"></div>
+            </div>
+            <p class="procestekst fade-in">Bij deze opdracht maakten we in een groep een campagne voor het
+                Voedingscentrum om voedselverspilling te verminderen. We onderzochten het onderwerp en de doelgroep via
+                deskresearch en interviews, en gebruikten de belangrijkste inzichten om een empathie map en ontwerpeisen
+                op te stellen. Op basis daarvan ontwikkelden we De Kliekjeskoning: een humoristische influencer die
+                studenten van 16 tot 24 jaar motiveert om voedselrestjes te gebruiken in plaats van weg te gooien.
+                Vervolgens bedachten we een passende huisstijl en maakten we een brandboard dat als basis diende voor al
+                onze ontwerpen. We werkten een speelse en vrolijke visuele stijl uit die goed aansloot bij het thema en
+                de doelgroep. Scrollytelling en positieve framing zijn effectieve manieren om gedragsverandering rond
+                voedselverspilling te stimuleren.</p>
+        </div>
+        <img src="assets/pictures/kliekjeskoning/kliekjeskoning logo.svg" alt="" class="logofoto fade-in">
+    </div>
+
+    <div class="langelijn fade-in"></div>
+
+    <div class="container-eindwerk">
+        <div class="flexkk">
+            <div class="containerkk-left">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/kliekjeskoning/instagram.svg" loading="eager" class="kkimg">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/kliekjeskoning/poster.svg" loading="eager" class="kkimg">
+                </div>
+                <div class="frame fade-in">
+                    <img src="assets/pictures/kliekjeskoning/brandboard.svg" alt="" class="kkimg">
+                </div>
+            </div>
+            <div class="containerkk-right">
+                <div class="frame fade-in">
+                    <img src="assets/pictures/kliekjeskoning/website.svg" alt="" class="web">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="digidive.html">
+        <button class="vpbutton fade-in">Volgend project</button>
+    </a>
+
+    <div class="footer">
+        <div class="footercontainer">
+            <div class="links">
+                <img src="assets/icons/Logo.svg" alt="">
+            </div>
+            <div class="rechts">
+                <p>Zoë Haagmans</p>
+                <p>CMD Zuyd Hogeschool Maastricht</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/slider.js"></script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('active');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/pst0hra.css">
+    <link rel="stylesheet" href="https://use.typekit.net/thp8tux.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navbar" id="start">
+        <div class="navbar-icon">
+            <img src="assets/icons/Logo.svg" alt="logo" class="logo">
+            <a href="index.html">
+                <button class="home"><img src="assets/icons/home.svg" alt="Home" class="homelogo"></button>
+            </a>
+        </div>
+        <div class="navbar-head">
+            <h1>Bugsy</h1>
+        </div>
+        <div class="navbar-links">
+            <a class="nav" href="index.html#work">Projecten</a>
+            <a class="nav" href="index.html#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu openen" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="nav mobile-nav" href="#work" onclick="closeMobileMenu()">Projecten</a>
+        <a class="nav mobile-nav" href="#contact" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <div class="proces">
+        <div class="container-proces">
+            <div class="fade-in">
+                <h2>Proces</h2>
+                <div class="lijn"></div>
+            </div>
+            <p class="procestekst fade-in">Deze opdracht voerde ik parallel uit aan de Kliekjeskoning, maar stond daar
+                los van. Ik ontwikkelde mijn eigen game en leerde daarbij belangrijke programmeerprincipes, zoals het
+                opzetten van een applicatie, het schrijven van desktopsoftware en het bouwen van een eenvoudig content
+                management systeem. In het begin werkte ik met p5.js en oefende ik met vormen, kleuren, interacties en
+                het koppelen van toetsen aan acties. Daarna maakte ik enkele eenvoudige games om beweging, logica en de
+                invloed van geluid en muziek op de spelervaring beter te begrijpen. Vervolgens ontwierp ik mijn eigen
+                game met drie schermen en een schattige, eenvoudige stijl die paste bij mijn zelfgetekende karakter. In
+                het spel moet de speler vallende lieveheersbeestjes ontwijken; hoe langer je speelt, hoe sneller ze
+                vallen. Na drie botsingen is het spel afgelopen.</p>
+        </div>
+        <img src="assets/pictures/bugsy/bugsy logo.svg" alt="" class="logofoto fade-in">
+    </div>
+
+    <div class="langelijn fade-in"></div>
+
+    <div class="container-eindwerk">
+        <div class="flexbugsy">
+            <div class="frame fade-in">
+                <img src="assets/pictures/bugsy/scherm 1.svg" alt="" class="bugsyfoto">
+            </div>
+            <div class="frame fade-in">
+                <img src="assets/pictures/bugsy/scherm 2.svg" alt="" class="bugsyfoto">
+            </div>
+            <div class="frame fade-in">
+                <img src="assets/pictures/bugsy/scherm 3.svg" alt="" class="bugsyfoto">
+            </div>
+        </div>
+    </div>
+
+    <a href="https://mia-mmt2-2425.github.io/final-second-z0etje/">
+        <button class="vpbutton fade-in">Speel het spel</button>
+    </a>
+
+    <a href="designpaper.html">
+        <button class="vpbutton fade-in">Volgend project</button>
+    </a>
+
+    <div class="footer">
+        <div class="footercontainer">
+            <div class="links">
+                <img src="assets/icons/Logo.svg" alt="">
+            </div>
+            <div class="rechts">
+                <p>Zoë Haagmans</p>
+                <p>CMD Zuyd Hogeschool Maastricht</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/slider.js"></script>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('active');
+            hamburgerBtn.setAttribute('aria-expanded', false);
+        }
+    </script>
+
+
+</body>
+
+</html>

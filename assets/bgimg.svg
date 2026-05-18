@@ -1,0 +1,32 @@
+<svg width="1728" height="720" viewBox="0 0 1728 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_347_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-131" y="0" width="268" height="346">
+<rect x="-129.5" y="0.5" width="265.231" height="345" fill="#D9D9D9" stroke="#102E4A"/>
+</mask>
+<g mask="url(#mask0_347_3)">
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -251.765 786.564)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -221.839 815.492)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -411.709 641.936)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -504.581 548.482)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -475.687 581.857)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -445.762 613.008)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -379.721 669.748)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -314.711 733.162)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -283.754 762.09)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.615657 -0.788014 0.740285 0.672293 -348.763 700.898)" stroke="#3B4B41" stroke-width="15"/>
+</g>
+<mask id="mask1_347_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1497" y="453" width="346" height="267">
+<rect x="1842.5" y="453.5" width="265.231" height="345" transform="rotate(90 1842.5 453.5)" fill="#D9D9D9" stroke="#102E4A"/>
+</mask>
+<g mask="url(#mask1_347_3)">
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1056.43 331.236)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1027.51 361.16)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1201.06 171.291)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1294.52 78.4199)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1261.14 107.312)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1229.99 137.238)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1173.25 203.279)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1109.84 268.289)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1080.91 299.246)" stroke="#3B4B41" stroke-width="15"/>
+<line y1="-7.5" x2="993.926" y2="-7.5" transform="matrix(0.788014 0.615657 -0.672293 0.740285 1142.1 234.236)" stroke="#3B4B41" stroke-width="15"/>
+</g>
+</svg>
