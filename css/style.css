@@ -607,12 +607,12 @@ li {
     align-items: center;
 }
 
-    .containerdd-left {
-        display: flex;
-        flex-direction: column;
-        gap: 47px;
-        width: 45%;
-    }
+.containerdd-left {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    width: 45%;
+}
 
 .containerdd-rechts {
     display: flex;
@@ -628,7 +628,8 @@ li {
     display: block;
 }
 
-.dd-right1, .dd-right2 {
+.dd-right1,
+.dd-right2 {
     max-width: 100%;
     height: auto;
     display: block;
@@ -904,7 +905,7 @@ a:has(.vpbutton) {
 @media (max-width: 1000px) {
 
     .logo {
-        width: 45%;
+        width: 60%;
     }
 
     .index-page .logo {
@@ -1178,9 +1179,7 @@ a:has(.vpbutton) {
 
 @media (max-width: 780px) {
 
-    .logo {
-        width: 35%;
-    }
+
 
     .index-page .logo {
         width: 50%;
@@ -1329,9 +1328,6 @@ a:has(.vpbutton) {
 
 @media (max-width: 680px) {
 
-    .logo {
-        width: 30%;
-    }
 
     .homelogo {
         width: 60%;
@@ -1444,7 +1440,7 @@ a:has(.vpbutton) {
 
     .skborder {
         border: #3B4B41 solid 10px;
-        width: 50%;
+        width: 60%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
@@ -1452,7 +1448,7 @@ a:has(.vpbutton) {
 
     .skborder2 {
         border: #3B4B41 solid 10px;
-        width: 50%;
+        width: 55%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
@@ -1667,9 +1663,7 @@ a:has(.vpbutton) {
 
 @media (max-width: 580px) {
 
-    .logo {
-        width: 30%;
-    }
+
 
     /*skills*/
     .skborder {
@@ -1721,6 +1715,66 @@ a:has(.vpbutton) {
         width: 91px;
         height: auto;
     }
+
+    /*bugsy*/
+    .flexbugsy {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /*design papers*/
+    .flexdp.mobile-only .containerdp-left {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .containerdp-middle {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /*digidive*/
+    .ddflex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .containerdd-rechts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .dd-right1,
+    .dd-right2 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .containerdd-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .dd-left {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1749,9 +1803,7 @@ a:has(.vpbutton) {
         width: 40%;
     }
 
-    .logo {
-        width: 25%;
-    }
+
 
     .navbar-icon {
         display: flex;
@@ -1815,7 +1867,7 @@ a:has(.vpbutton) {
 
     .skborder {
         border: #3B4B41 solid 7px;
-        width: 100%;
+        width: 120%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
@@ -1823,7 +1875,7 @@ a:has(.vpbutton) {
 
     .skborder2 {
         border: #3B4B41 solid 7px;
-        width: 100%;
+        width: 120%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
@@ -1831,7 +1883,7 @@ a:has(.vpbutton) {
 
     .skborder3 {
         border: #3B4B41 solid 7px;
-        width: 100%;
+        width: 120%;
         height: auto;
         padding: 10px 20px;
         box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
@@ -1903,8 +1955,8 @@ a:has(.vpbutton) {
     .bgpr {
         display: flex;
         background-color: #3B4B41;
-        width: 300px;
-        height: 150px;
+        width: 330px;
+        height: 230px;
         margin: auto;
         padding: 40px 20px;
         margin-top: 50px;
@@ -1921,9 +1973,17 @@ a:has(.vpbutton) {
     }
 
     .info .sub {
-        font-size: 15px;
+        font-size: 13px;
         font-family: "inter-variable", sans-serif;
         font-weight: bold;
+        color: black;
+    }
+
+    .info {
+        background-color: white;
+        margin-left: -7px;
+        margin-bottom: -8px;
+        padding: 2px 5px;
     }
 
     .projectencontainer {
@@ -1943,6 +2003,18 @@ a:has(.vpbutton) {
         color: white;
     }
 
+    .contact-form button {
+        align-self: flex-start;
+        background: #3B4B41;
+        border: none;
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px;
+        font-size: 10px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
     .background-image2 {
         width: 80%;
         margin: auto;
@@ -1951,7 +2023,7 @@ a:has(.vpbutton) {
     }
 
     .contact-box {
-        width: 95%;
+        width: 110%;
         border: #3B4B41 solid 10px;
         margin: auto;
         align-items: center;
@@ -1964,44 +2036,10 @@ a:has(.vpbutton) {
 
     /*footer*/
     .pfooter {
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    /*digidive*/
-    .ddflex {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: auto;
-        align-items: center;
-    }
-
-    .containerdd-rechts {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .dd-right1,
-    .dd-right2 {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .containerdd-left {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .dd-left {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+    
 }
 
 
