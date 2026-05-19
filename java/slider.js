@@ -40,6 +40,14 @@ function resetAutoSlide() {
 // Start auto slide
 slideInterval = setInterval(nextSlide, 3000);
 
+// Mobile viewport height fix for iOS/Android browser UI
+function setViewportHeight() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+
+setViewportHeight();
+window.addEventListener('resize', setViewportHeight);
+
 // Scroll animation for .fade-in elements
 const fadeInElements = document.querySelectorAll('.fade-in');
 if (fadeInElements.length > 0) {
