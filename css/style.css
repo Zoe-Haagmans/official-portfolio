@@ -1976,15 +1976,24 @@ a:has(.vpbutton) {
         font-size: 13px;
         font-family: "inter-variable", sans-serif;
         font-weight: bold;
+        color: #F7EFD9;
+    }
+
+    .info .sub2 {
+        font-size: 13px;
+        font-family: "inter-variable", sans-serif;
+        font-weight: bold;
         color: black;
     }
 
+    
     .info {
-        background-color: white;
+       
         margin-left: -7px;
         margin-bottom: -8px;
         padding: 2px 5px;
     }
+    
 
     .projectencontainer {
         width: 80%;
@@ -2037,6 +2046,10 @@ a:has(.vpbutton) {
     /*footer*/
     .pfooter {
         font-size: 12px;
+    }
+
+    .footer {
+        margin-bottom: 0px;
     }
 
     
